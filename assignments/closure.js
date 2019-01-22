@@ -1,6 +1,14 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function count() {
+  let counter = 0;
+  for (let i = 0; i < 10; i++) {
+    counter++;
+  }
+  return counter;
+}
+
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
