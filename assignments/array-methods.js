@@ -96,6 +96,22 @@ console.log(ticketPriceTotal);
 
 // Problem 1
 
+// using .map() get all runners emails so they can be emailed a nice note after the race.
+
+const email = runners.map(function(x){
+    return x.email;
+});
+
 // Problem 2
+// using .filter find out all runners that works at Skinte
+
+const skinteRunners = runners.filter(function(x){
+    return x.company_name == "Skinte";
+});
 
 // Problem 3
+// each company is matching the runners donation
+const newDonation = runners.reduce(function (total, amount) {
+    return total + amount.donation * 2
+}, 0);
+console.log(newDonation);
